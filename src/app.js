@@ -54,9 +54,9 @@ io.on("connection", (socket) => {
         });
     });
 });
-const PORT = process.env.PORT || 3004
 
-app.listen(PORT, () => {
-    console.log("Servidor corriendo correctamente en el puerto", PORT)
+
+app.listen(process.env.PORT || 4000, () => {
+    console.log("Servidor corriendo correctamente en el puerto", process.env.PORT)
 
 });
