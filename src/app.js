@@ -4,8 +4,8 @@ const cors = require('cors');
 const app = express();
 
 var bodyParser = require('body-parser');
-app.use(bodyParser.json({limit: "50mb"}));
-app.use(bodyParser.urlencoded({limit: "50mb", extended: true, parameterLimit:50000}));
+app.use(bodyParser.json({ limit: "50mb" }));
+app.use(bodyParser.urlencoded({ limit: "50mb", extended: true, parameterLimit: 50000 }));
 
 const db = require("./database/models")
 const Mensaje = db.Mensaje;
@@ -56,7 +56,7 @@ io.on("connection", (socket) => {
 });
 
 
-app.listen(process.env.PORT || 4000, () => {
-    console.log("Servidor corriendo correctamente en el puerto", process.env.PORT)
+app.listen(process.env.PORT || 3001, () => {
+    console.log("Servidor corriendo correctamente en el puerto", num)
 
 });
