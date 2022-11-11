@@ -32,7 +32,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cors())
 
 
-console.log('Verificar PORT socket, era 4000')
 server.listen(4002);
 
 
