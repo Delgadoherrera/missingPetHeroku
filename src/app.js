@@ -55,8 +55,8 @@ io.on("connection", (socket) => {
     });
 });
 
-
+const PORT = process.env.port
 app.listen(process.env.PORT, () => {
-    console.log("Servidor corriendo correctamente en el puerto", num)
+    console.log("server ok")
 
 });
