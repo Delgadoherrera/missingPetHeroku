@@ -56,7 +56,7 @@ io.on("connection", (socket) => {
 });
 
 
-app.listen(process.env.PORT || 3001, () => {
+app.listen(process.env.PORT, () => {
     console.log("Servidor corriendo correctamente en el puerto", num)
 
 });
