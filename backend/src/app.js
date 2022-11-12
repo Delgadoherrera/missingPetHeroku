@@ -25,7 +25,11 @@ const mensajesApi = require('./api/mensajesApi')
 app.use(express.static("public"));
 app.use(express.static(path.join(__dirname, '../public')));
 app.use(express.json());
-app.use(session({ secret: 'missingPetsssss' }));
+app.use(session({
+    secret: 'missingPetsssss',
+    resave: true,
+    saveUninitialized: true
+}));
 app.use(express.json({ limit: "10mb", extended: true }))
 app.use(express.urlencoded({ limit: "10mb", extended: true, parameterLimit: 50000 }))
 app.use(express.urlencoded({ extended: false }));
