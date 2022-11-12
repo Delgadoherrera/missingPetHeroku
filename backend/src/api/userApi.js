@@ -82,7 +82,7 @@ router.post("/user/login", async (req, res) => {
                         })
                     }
                     else if (emailVerify === usuario.email && key == false) {
-                        // contraseña incorrecta == 1
+                        // contraseña incaasdorrecta == 1
                         return res.status(400).send('invalid password')
                     }
 
