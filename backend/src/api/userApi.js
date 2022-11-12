@@ -87,7 +87,7 @@ router.post("/user/login", async (req, res) => {
                     }
 
                 }).catch((error) => {
-                    /* console.log('error catch' + error) */
+                    /* console.log('eraaaaror catch' + error) */
                 })
 
             }
