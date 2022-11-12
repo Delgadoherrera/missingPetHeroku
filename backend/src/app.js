@@ -53,9 +53,10 @@ io.on("connection", (socket) => {
         });
     });
 });
+console.log('PROBANDO LA CONSOLA ESTA DFEL ORTO')
 
 const PORT = process.env.port
 app.listen(process.env.PORT, () => {
-    console.log("Te haz conectado, intenta averiguar porque chorizo de puerto sale: ", PORT)
+    console.log("Tasdasdasd haz conectado, intenta averiguar porque chorizo de puerto sale: ", PORT)
 
 });
